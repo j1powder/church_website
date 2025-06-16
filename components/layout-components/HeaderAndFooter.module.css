@@ -1,6 +1,13 @@
 .mainDiv {
     background-color: lightgray;
-    padding-top:2rem;
+    padding: 1rem 2rem;
+}
+
+.mainDiv h2 {
+    display: inline;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 2rem;
 }
 
 .navBar {
@@ -15,4 +22,16 @@
 
 .menuItem {
     display: inline;
+}
+
+.MainNavBar a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.logo {
+    width: 75px;
+    height: auto;
+    display: inline-block;
 }
