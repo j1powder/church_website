@@ -1,5 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+import 'primeicons/primeicons.css';
 
 //import  "bootstrap/dist/css/bootstrap.min.css"
 
@@ -23,12 +27,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <PrimeReactProvider>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
         {children}
       </body>
+      </PrimeReactProvider>
     </html>
   );
 }

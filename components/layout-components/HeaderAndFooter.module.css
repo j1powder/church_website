@@ -20,18 +20,57 @@
     gap: 2rem;
 }
 
-.menuItem {
-    display: inline;
-}
-
-.MainNavBar a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
 
 .logo {
     width: 75px;
     height: auto;
     display: inline-block;
 }
+
+.mobMenu {
+    display: none;
+}
+.menuBtn {
+    display: none;
+}
+
+.sidebarNav {}
+
+
+
+
+
+.sidebarMenuList {
+}
+
+.sidebarMenuList a {
+    text-decoration: none;
+    color: black;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .mainDiv h2 {
+      display: none;
+    }
+    .navBar {
+        display: none;
+    }
+    .mobMenu {
+        display: inline;
+        width: 35px;
+        height: auto;
+        cursor: pointer;
+        float: right;
+    }
+    .menuBtn {
+        display: inline;
+        width: 35px;
+        height: auto;
+        cursor: pointer;
+        float: right;
+    }
+
+  }
